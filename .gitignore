@@ -4,7 +4,8 @@
 *.iml
 # Log file
 *.log
-
+mvnw*
+.mvn
 # BlueJ files
 *.ctxt
 
