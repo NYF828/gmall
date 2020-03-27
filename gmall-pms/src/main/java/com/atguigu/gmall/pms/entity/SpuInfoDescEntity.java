@@ -1,5 +1,6 @@
 package com.atguigu.gmall.pms.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
@@ -10,7 +11,7 @@ import lombok.Data;
 
 /**
  * spu信息介绍
- * 
+ *
  * @author nyf828
  * @email niuyangfan@outlook.com
  * @date 2020-03-24 20:54:37
@@ -24,7 +25,7 @@ public class SpuInfoDescEntity implements Serializable {
 	/**
 	 * 商品id
 	 */
-	@TableId
+	@TableId(type = IdType.INPUT)
 	@ApiModelProperty(name = "spuId",value = "商品id")
 	private Long spuId;
 	/**
